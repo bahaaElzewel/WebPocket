@@ -1,0 +1,6 @@
+@WebPocket_HostAddress = http://localhost:5206
+
+GET {{WebPocket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
