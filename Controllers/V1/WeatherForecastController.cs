@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebPocket.Controllers;
+namespace WebPocket.Controllers.V1;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
+[ApiVersion("1.6")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Bahaa", "Evo", "Bahaa", "Bahaa", "Bahaa", "Bahaa", "Bahaa", "Hot", "Sweltering", "Scorching"
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
